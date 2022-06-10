@@ -1,0 +1,32 @@
+*{
+    margin:40px;
+}
+.input-group{
+    position: relative;
+}
+label{
+    position: absolute;
+    top:0;
+    left: 0;
+    transform: translate(10px,10px);
+    transform-origin: left;
+    transition: transform .25s;
+}
+#name {
+    padding: 10px;
+    border: none;
+    /* background-color: lightgreen; */
+    border-radius: 4px;
+    font: inherit;
+    background-color: transparent;
+    outline: 2px solid red;
+
+}
+.input-group:focus-within label {
+    transform: translate(0px,-30px) scale(.8);
+color: plum;
+
+}
+.input-group:focus-within #name{
+    outline-color: blue; 
+}
